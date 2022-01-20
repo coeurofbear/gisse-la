@@ -21,18 +21,15 @@ body {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #919ec0;
+  color: #ffffff20;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-  /* background: linear-gradient(45deg, rgba(18,119,177,1) 0%, rgba(208,31,110,1) 40%, rgba(0,247,255,1) 100%); */
-  background: linear-gradient(45deg, rgba(18,119,177,1) 0%, rgba(255,143,0,0.38279061624649857) 100%);
-	background-size: 200% 200%;
+  background: linear-gradient(120deg, rgba(18,119,177,1) 0%, rgba(255,143,0,0.38279061624649857) 100%);
+	background-size: 150% 150%;
 	animation: rotation 10s ease infinite;
 	height: 100vh;
-  /* animation: rotation 2s infinite; */
-  /* animation-iteration-count: infinite; */
+  margin: 0;
 }
 
 /* @keyframes rotation {

@@ -1,3 +1,8 @@
 <template>
-    <h1>This is the beginning of my portfolio. Hola loools 3</h1>
+    <h1>This is the beginning of my portfolio.</h1>
 </template>
+<style scoped>
+h1 {
+    margin: 2rem;
+}
+</style>
