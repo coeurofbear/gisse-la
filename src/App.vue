@@ -1,6 +1,12 @@
 <template>
-  <div id="app">
-    <Init/>
+  <div>
+    <div id="app">
+      <div class="main">
+        <Init /> 
+        <div class="bg"></div>
+        <div class="border"></div>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -11,35 +17,42 @@ export default {
   name: 'App',
   components: {
     Init
-  }
+  },
+
 }
 </script>
 
-<style>
-body {
-  /* background: rgb(18,119,177); */
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  color: #ffffff20;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+<style lang="scss" scope>
+@import '~@/assets/css/all.scss';
+
+.main {
+  position: relative;
+  margin: 10px;
+}
+
+.bg {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 5px;
   background: linear-gradient(120deg, rgba(18,119,177,1) 0%, rgba(255,143,0,0.38279061624649857) 100%);
 	background-size: 150% 150%;
 	animation: rotation 10s ease infinite;
-	height: 100vh;
-  margin: 0;
 }
 
-/* @keyframes rotation {
-  0% {
-    background: linear-gradient(0deg, rgba(18,119,177,1) 0%, rgba(208,31,110,1) 40%, rgba(0,247,255,1) 100%);
-  }
-  100% {
-    background: linear-gradient(270deg, rgba(18,119,177,1) 0%, rgba(208,31,110,1) 40%, rgba(0,247,255,1) 100%);
-  }
-} */
+.border {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: calc(100vh - 20px);
+  width: calc(100vw - 20px);
+  border: 10px solid white;
+  border-radius: 16px;
+  outline: white solid 10px;
+  z-index: -1;
+}
 
 @keyframes rotation {
 	0% {
