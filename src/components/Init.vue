@@ -2,8 +2,7 @@
   <div class="wrapper">
     <h1>This is the beginning of my portfolio.</h1>
     <div class="bottom">
-      <!-- <a href="/">See more</a> -->
-      <router-link to="/">Go to Home</router-link>
+      <router-link to="/projects">Go to Home</router-link>
     </div>
   </div>
 </template>
