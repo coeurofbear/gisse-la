@@ -3,6 +3,17 @@ body {
   font-family: 'Inter', sans-serif;
 }
 
+.main {
+  position: relative;
+  margin: 10px;
+}
+
+.wrapper {
+  padding: 3rem;
+  height: 100vh;
+  height: calc(100vh - 6rem - 20px);
+}
+
 h1,
 h2,
 h3,
