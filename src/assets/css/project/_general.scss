@@ -1,3 +1,6 @@
+
+@import '@/assets/css/variables/all.scss';
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
@@ -11,6 +14,10 @@ body {
 .wrapper {
   padding: 3rem;
   height: calc(100vh - 20px);
+
+  @media #{$breakpoint-xl-down} {
+    padding: 1rem;
+  }
 }
 
 h1,
@@ -18,4 +25,17 @@ h2,
 h3,
 h4 {
   margin: 0;
+}
+
+.main-title {
+  font-size: 120px;
+  color: white;
+  margin-bottom: 40px;
+
+  @media #{$breakpoint-xl-down} {
+    font-size: 80px;
+  }
+  @media #{$breakpoint-md-down} {
+    font-size: 65px;
+  }
 }
