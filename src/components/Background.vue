@@ -24,8 +24,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: calc(100vh - 20px);
-  width: calc(100vw - 20px);
+  height: 100vh;
+  width: 100vw;
   border: 10px solid white;
   border-radius: 16px;
   outline: white solid 10px;
