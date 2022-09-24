@@ -12,10 +12,6 @@
 </template>
 
 <style scoped lang="scss">
-a {
-  font-size: 25px;
-  color: white;
-}
 .bottom {
   position: absolute;
   bottom: 3rem;

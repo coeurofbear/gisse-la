@@ -1,5 +1,6 @@
 <template>
-  <div class="border">
+  <div>
+    <div class="border" />
     <div class="bg" />
   </div>
 </template>
@@ -15,8 +16,8 @@
   background: linear-gradient(120deg, rgba(18,119,177,1) 0%, rgba(255,143,0,0.38279061624649857) 100%);
 	background-size: 150% 150%;
 	animation: rotation 10s ease infinite;
+  
 }
-
 .border {
   position: fixed;
   top: 0;
@@ -26,7 +27,7 @@
   border: 10px solid white;
   border-radius: 16px;
   outline: white solid 10px;
-  z-index: -1;
+  pointer-events: none;
 }
 
 @keyframes rotation {
