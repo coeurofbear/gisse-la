@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <div class="bg"></div>
-    <div class="border"></div>
+  <div class="border">
+    <div class="bg" />
   </div>
 </template>
 
