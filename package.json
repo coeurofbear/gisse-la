@@ -21,8 +21,8 @@
     "@vue/cli-plugin-eslint": "~5.0.8",
     "@vue/cli-service": "~5.0.8",
     "babel-eslint": "^10.1.0",
+    "bootstrap": "^5.2.1",
     "eslint": "^7.32.0",
-    "bootstrap-4-grid": "^3.4.0",
     "eslint-plugin-vue": "^6.2.2",
     "sass": "^1.55.0",
     "vue-template-compiler": "^2.6.11"
