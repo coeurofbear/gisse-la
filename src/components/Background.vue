@@ -6,8 +6,6 @@
 </template>
 
 <style lang="scss" scope>
-@import '~@/assets/css/all.scss';
-
 .bg {
   position: absolute;
   top: 0;

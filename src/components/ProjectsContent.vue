@@ -5,8 +5,6 @@
 </template>
 
 <style scoped lang="scss">
-@import '~@/assets/css/all.scss';
-
 h1 {
   font-size: 120px;
   color: white;
