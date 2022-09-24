@@ -1,6 +1,3 @@
-// External grid system and variables
-@import './breakpoint-variables';
-
 $grid-breakpoints: (
   xs: 0,
   sm: $xs-max,
@@ -33,11 +30,4 @@ $container-max-widths: (
   box-sizing: border-box;
 }
 
-// We need to import all of these instead of just the main grid file since the
-// main grid file is importing a lot of helper classes
-
-@import "~bootstrap-4-grid/scss/grid/functions";
-@import "~bootstrap-4-grid/scss/grid/mixins/breakpoints";
-@import "~bootstrap-4-grid/scss/grid/mixins/grid-framework";
-@import "~bootstrap-4-grid/scss/grid/mixins/grid";
-@import "~bootstrap-4-grid/scss/grid/grid";
+@import "~bootstrap/dist/css/bootstrap-grid.css";
