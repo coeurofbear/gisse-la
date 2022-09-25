@@ -19,7 +19,7 @@ export default {
   },
   methods: {
     setup(sketch) {
-      sketch.createCanvas(sketch.windowWidth, sketch.windowHeight);
+      sketch.createCanvas(1000, 500);
       sketch.noStroke()
     },
     draw(sketch) {
@@ -65,7 +65,7 @@ export default {
 }
 </script>
 
-<style scoped lang="scss">
+<style lang="scss">
 .p5Canvas {
   height: 100% !important;
   width: 100% !important;
