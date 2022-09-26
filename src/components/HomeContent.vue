@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid wrapper wrapper-short">
+  <div class="container-fluid wrapper-short">
     <div class="row">
       <div class="col-12">
         <h1 class="main-title">This is the beginning of my portfolio.</h1>
