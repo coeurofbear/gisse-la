@@ -11,7 +11,8 @@ body {
   margin: 10px;
 }
 
-.wrapper {
+.wrapper,
+.wrapper-short {
   padding: 3rem;
   
   @media #{$breakpoint-lg-down} {
@@ -21,10 +22,10 @@ body {
   @media #{$breakpoint-md-down} {
     padding: 1rem;
   }
+}
 
-  &-short {
-    height: calc(100vh - 20px);
-  }
+.wrapper-short {
+  height: calc(100vh - 20px);
 }
 
 h1,

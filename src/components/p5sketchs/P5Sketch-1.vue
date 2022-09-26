@@ -1,16 +1,22 @@
 <template>
+<div>
+  <Loading v-if="!circles" />
   <VueP5
+    v-else
     @setup="setup"
     @draw="draw"
   />
+</div>
 </template>
 
 <script>
 import VueP5 from 'vue-p5'
+import Loading from '@/components/Loading.vue'
 
 export default {
   components: {
-    VueP5
+    VueP5,
+    Loading
   },
   data() {
     return {
