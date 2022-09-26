@@ -13,14 +13,23 @@
       <div class="col-12">
         <h2>p5 projects</h2>
         <masonry
-          :cols="4"
+          class="gallery"
+          :cols="3"
           :gutter="2"
           >
-          <div
+          <router-link
+            to="/"
             class="box"
             :class="`box-${index+1}`"
             v-for="(item, index) in items"
-            :key="index">Item: {{index + 1}}</div>
+            :key="index">
+              <div class="image">
+                <img :src="item.image" alt="">
+              </div>
+              <div class="hover">
+                Item {{index + 1}}: {{ item.text }}
+              </div>
+            </router-link>
         </masonry>
       </div>
       <div class="col-12 col-sm-6">
@@ -46,6 +55,7 @@ export default {
     return {
       // items: [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6]
       items: [
+        { image: require('@/assets/images/circles.png'), text: 'p5 circle project', url: '/' },
         { image: '', text: '', url: '/' },
         { image: '', text: '', url: '/' },
         { image: '', text: '', url: '/' },
@@ -57,18 +67,23 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
+.gallery {
+  margin-bottom: 100px;
+}
 h2 {
   color: white;
   margin-bottom: 30px;
 }
 
 .box {
-  background: red;
+  // background: red;
+  border: 1px solid black;
   margin-bottom: 2px;
+  display: block;
 
-  &-1 {
-    height: 150px;
-  }
+  // &-1 {
+  //   height: 150px;
+  // }
   &-2 {
     height: 90px;
   }
@@ -83,24 +98,6 @@ h2 {
   }
   &-6 {
     height: 170px;
-  }
-  &-7 {
-    height: 50px;
-  }
-  &-8 {
-    height: 120px;
-  }
-  &-9 {
-    height: 120px;
-  }
-  &-10 {
-    height: 150px;
-  }
-  &-11 {
-    height: 90px;
-  }
-  &-12 {
-    height: 190px;
   }
 }
 </style>
