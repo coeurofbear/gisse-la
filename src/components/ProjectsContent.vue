@@ -10,12 +10,12 @@
         <P5Sketch2 v-if="false"/>
         <P5Sketch3 v-if="false"/>
       </div>
-      <div class="col-12">
+      <div class="col-12" v-if="false">
         <h2>p5 projects</h2>
         <masonry
           class="gallery"
-          :cols="3"
-          :gutter="2"
+          :cols="{default: 4, 1000: 3, 700: 2, 500: 1}"
+          :gutter="15"
           >
           <router-link
             to="/"
@@ -25,9 +25,9 @@
             :key="index">
               <div class="image">
                 <img :src="item.image" alt="">
-              </div>
-              <div class="hover">
-                Item {{index + 1}}: {{ item.text }}
+                <div class="hover">
+                  Item {{index + 1}}: {{ item.text }}
+                </div>
               </div>
             </router-link>
         </masonry>
@@ -56,8 +56,10 @@ export default {
       // items: [1, 2, 3, 4, 5, 6, 1, 2, 3, 4, 5, 6]
       items: [
         { image: require('@/assets/images/circles.png'), text: 'p5 circle project', url: '/' },
-        { image: '', text: '', url: '/' },
-        { image: '', text: '', url: '/' },
+        { image: require('@/assets/images/test.png'), text: 'p5 temp project', url: '/' },
+        { image: require('@/assets/images/temp.png'), text: 'p5 temp project', url: '/' },
+        { image: require('@/assets/images/joydivision.png'), text: 'p5 temp project', url: '/' },
+        { image: require('@/assets/images/waves.png'), text: 'p5 temp project', url: '/' },
         { image: '', text: '', url: '/' },
         { image: '', text: '', url: '/' },
         { image: '', text: '', url: '/' },
@@ -75,28 +77,51 @@ h2 {
   margin-bottom: 30px;
 }
 
+.hover {
+  position: absolute;
+  width: 100%;
+  background: white;
+  top: 0;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+
+.image {
+  position: relative;
+
+  &:hover {
+    .hover {
+      display: flex;
+      opacity: 0.6;
+    }
+  }
+}
 .box {
   // background: red;
-  border: 1px solid black;
-  margin-bottom: 2px;
+  // border: 1px solid black;
+  margin-bottom: 15px;
   display: block;
+  line-height: 0;
 
   // &-1 {
   //   height: 150px;
   // }
-  &-2 {
+  &-6 {
     height: 90px;
   }
-  &-3 {
+  &-8 {
     height: 120px;
   }
-  &-4 {
+  &-9 {
     height: 150px;
   }
-  &-5 {
+  &-10 {
     height: 60px;
   }
-  &-6 {
+  &-7 {
     height: 170px;
   }
 }
