@@ -1,12 +1,10 @@
-import Vue from 'vue'
 import App from './App.vue'
 import router from './router/index.js'
 import VueMasonry from 'vue-masonry-css'
+import { createApp } from 'vue'
 
-Vue.config.productionTip = false
-Vue.use(VueMasonry)
+const app = createApp(App)
+app.use(router)
+app.use(VueMasonry)
 
-new Vue({
-  router,
-  render: h => h(App),
-}).$mount('#app')
+app.mount('#app')
