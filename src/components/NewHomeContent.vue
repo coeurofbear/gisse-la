@@ -26,6 +26,6 @@ export default {
   height: 100%;
 }
 .main {
-  height: 100vh;
+  height: 100dvh;
 }
 </style>
