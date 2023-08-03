@@ -1,20 +1,51 @@
 
 @import '@/assets/css/variables/all.scss';
 
-html {
-  line-height: 0;
-}
-
 body {
-  background: $greenish;
-  margin: 0;
-  font-family: 'Inter', sans-serif;
+  // background: $greenish;
+  background: #fff;
+  // font-family: 'Inter', sans-serif;
+  font-family: 'Bitter', serif;
+  min-height: 100dvh;
 }
 
 img {
   max-width: 100%;
 }
 
+p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 1rem;
+
+  @media #{$breakpoint-xl-up} {
+    font-size: 24px;
+  }
+
+  &.italic {
+    font-style: italic;
+  }
+}
+
+.large {
+  font-size: 27px;
+  line-height: 140%;
+
+  @media #{$breakpoint-xl-up} {
+    font-size: 36px;
+  }
+}
+
+.small {
+  font-size: 12px;
+  line-height: 120%;
+  margin-bottom: 0;
+
+  @media #{$breakpoint-xl-up} {
+    font-size: 14px;
+  }
+}
 
 h1,
 h2,
@@ -23,22 +54,44 @@ h4 {
   margin: 0;
 }
 
-.main-title {
-  font-size: 120px;
-  color: white;
-  margin-bottom: 40px;
-  padding: 0;
+h1 {
+  color: $blakish;
+  font-size: 55px;
+  font-style: italic;
+  margin-bottom: 1rem;
   line-height: 120%;
 
-  @media #{$breakpoint-xl-down} {
-    font-size: 80px;
+  @media #{$breakpoint-md-up} {
+    font-size: 70px;
   }
-  @media #{$breakpoint-md-down} {
-    font-size: 65px;
+
+  @media #{$breakpoint-xl-up} {
+    font-size: 88px;
   }
 }
 
 a {
   font-size: 25px;
+  color: $blakish;
+}
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background: $main;
+  font-size: 20px;
   color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: all .5s ease;
+  display: inline-block;
+
+  &:hover {
+    background: darken($main, 5%);
+  }
+}
+.main {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100dvh;
 }
