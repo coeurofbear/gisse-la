@@ -1,6 +1,6 @@
 <template>
   <div class="top-bar">
-    <Logo v-if="false" />
+    <Logo :height="75" />
     <SandwichMenuIcon class="wrap" />
   </div>
 </template>
@@ -25,10 +25,11 @@ export default {
   transform: translateY(-50%);
 }
 .top-bar {
-  position: fixed;
+  position: relative;
   width: 100%;
   display: flex;
   justify-content: center;
   padding: 35px 0;
+  align-self: self-start;
 }
 </style>

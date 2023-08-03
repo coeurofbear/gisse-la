@@ -1,7 +1,6 @@
 <template>
-  <div>
-    <img id="logo-menu" class="logo-menu" src="@/assets/images/logo-full.svg" alt="">
-  </div>
+  <img id="logo-menu" class="logo-menu" :src="image" alt="">
+  <!-- <div v-html="require('@/assets/images/logo-full.svg')"/> -->
 </template>
 <script>
 export default {
@@ -9,6 +8,15 @@ export default {
     height: {
       type: Number,
       default: 100
+    },
+    simple: {
+      type: Boolean,
+      default: false
+    }
+  },
+  computed: {
+    image () {
+      return this.simple ? require('@/assets/images/logo.svg') : require('@/assets/images/logo-full.svg')
     }
   },
   mounted() {
