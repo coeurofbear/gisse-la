@@ -1,18 +1,26 @@
 <template>
-  <div class="main">
-    <Menu/>
-    <Logo :height="300" class="center-logo"/>
-    <!-- <router-link to="/projects">Go to Projects</router-link> -->
+  <div>    
+    <Logo v-if="false" :height="300" class="center-logo"/>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-8">
+          <h1>Hey!<br>I'm Gíssela</h1>
+          <p class="large">I'm a Front-End developer and Designer from Chile based in Berlin.</p>
+          <p>I have more than 4 years of experience developing in Vue.js and recently started learning Flutter. I have experience in Graphic and Web Design, UI/UX and branding too. Although Graphic Design is not my main focus anymore, I still consider myself one :).</p>
+          <p>In my free time I like to ride my road bike, take analogue photos and learn german.</p>
+          <p>Wanna know more about me?</p>
+          <router-link class="btn" to="/about">About me</router-link>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
 <script>
-import Menu from '@/components/Menu.vue'
 import Logo from '@/components/Logo.vue'
 
 export default {
   components: {
-    Menu,
     Logo
   }
 }
@@ -25,7 +33,8 @@ export default {
   justify-content: center;
   height: 100%;
 }
-.main {
-  height: 100dvh;
-}
+// .main {
+//   height: 100dvh;
+//   display: grid;
+// }
 </style>

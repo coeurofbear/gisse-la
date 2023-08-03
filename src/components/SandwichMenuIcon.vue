@@ -17,7 +17,7 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/css/variables/all.scss';
 .line {
-  background: $cream;
+  background: $main;
   height: 3px;
   border-radius: 5px;
   width: 40px;

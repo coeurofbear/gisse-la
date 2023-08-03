@@ -1,19 +1,14 @@
 <template>
-  <div class="main">
-    <ProjectsContent />
-    <Bg />
-  </div>
+  <NewProjectsContent />
 </template>
 
 <script>
-import ProjectsContent from '@/components/ProjectsContent.vue'
-import Bg from '@/components/Background.vue'
+import NewProjectsContent from '@/components/NewProjectsContent.vue'
 
 export default {
   name: 'Projects',
   components: {
-    ProjectsContent,
-    Bg
+    NewProjectsContent,
   },
 
 }
