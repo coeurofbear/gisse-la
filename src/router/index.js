@@ -1,6 +1,7 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import Home from '@/views/Home.vue'
 import Projects from '@/views/Projects.vue'
+import Error from '@/views/Error.vue'
 
 const routes = [
   {
@@ -21,7 +22,11 @@ const routes = [
     path: '/projects',
     name: 'Projects',
     component: Projects
-  }
+  },
+  {
+    path: "/:notFound",
+    component: Error,
+  },
 ]
 
 const router = createRouter({
