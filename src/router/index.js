@@ -24,6 +24,11 @@ const routes = [
     component: Projects
   },
   {
+    path: '/about',
+    name: 'About',
+    component: Projects
+  },
+  {
     path: "/:notFound",
     component: Error,
   },
