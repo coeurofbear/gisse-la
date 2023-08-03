@@ -1,6 +1,8 @@
 <template>
   <div class="top-bar">
-    <Logo :height="75" />
+    <router-link to="/">
+      <Logo :height="75" />
+    </router-link>
     <SandwichMenuIcon class="wrap" />
   </div>
 </template>

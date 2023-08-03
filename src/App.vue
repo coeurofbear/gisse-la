@@ -1,8 +1,6 @@
 <template>
   <div class="main">
-    <router-link to="/">
-      <Menu/>
-    </router-link>
+    <Menu/>
     <router-view />
     <Footer/>
   </div>
