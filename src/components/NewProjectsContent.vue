@@ -5,7 +5,7 @@
       <div class="row">
         <div class="col-12 col-md-8">
           <h1>Hey!</h1>
-          <p class="large">This page is in construction</p>
+          <p class="large">This page is under construction</p>
           <router-link class="btn" to="/">Home</router-link>
         </div>
       </div>
@@ -30,8 +30,4 @@ export default {
   justify-content: center;
   height: 100%;
 }
-// .main {
-//   height: 100dvh;
-//   display: grid;
-// }
 </style>
