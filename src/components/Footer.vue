@@ -2,7 +2,7 @@
   <footer class="container footer">
     <div class="row">
       <div class="col-6 info">
-        <Logo simple class="logo"/>
+        <Icon class="logo"/>
         <p class="small italic">{{ new Date().getFullYear() }}</p>
       </div>
       <div class="col-6">
@@ -12,11 +12,11 @@
 </template>
 
 <script>
-import Logo from './Logo.vue'
+import Icon from '@/components/Icon.vue'
 
 export default {
   components: {
-    Logo
+    Icon
   }
 }
 </script>

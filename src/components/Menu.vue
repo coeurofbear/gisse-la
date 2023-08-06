@@ -1,7 +1,7 @@
 <template>
   <div class="top-bar">
     <router-link to="/">
-      <Logo :height="75" />
+      <Icon :size="90" icon="logo-full"/>
     </router-link>
     <SandwichMenuIcon class="wrap" />
   </div>
@@ -9,12 +9,12 @@
 
 <script>
 import SandwichMenuIcon from './SandwichMenuIcon.vue'
-import Logo from './Logo.vue'
+import Icon from '@/components/Icon.vue'
 
 export default {
   components: {
     SandwichMenuIcon,
-    Logo
+    Icon
 }
 }
 </script>
