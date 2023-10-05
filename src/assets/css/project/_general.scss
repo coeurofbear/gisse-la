@@ -3,10 +3,25 @@
 
 body {
   // background: $greenish;
-  background: #fff;
+  // background: #fff;
   // font-family: 'Inter', sans-serif;
   font-family: 'Bitter', serif;
   min-height: 100dvh;
+}
+
+.dark {
+  background: $dark;
+  
+  p,
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: $whitish;
+  }
+  #g {
+    fill: $dark;
+  }
 }
 
 img {
@@ -91,6 +106,11 @@ a {
     background: darken($main, 5%);
   }
 }
+
+.mrgn-tp {
+  margin-top: 6rem;
+}
+
 .main {
   display: grid;
   grid-template-rows: auto 1fr auto;

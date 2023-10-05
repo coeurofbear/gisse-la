@@ -5,7 +5,7 @@
         <div class="col-12 col-md-8">
           <h1>Hey!</h1>
           <p class="large">This page is under construction.</p>
-          <router-link class="btn" to="/">Home</router-link>
+          <router-link class="btn mrgn-tp" to="/">Home</router-link>
         </div>
       </div>
     </div>

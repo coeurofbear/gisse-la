@@ -1,7 +1,7 @@
 <template>
   <div class="top-bar">
     <router-link to="/">
-      <Icon :size="90" icon="logo-full"/>
+      <Icon :size="90" icon="logo-full" color="#EAC435"/>
     </router-link>
     <SandwichMenuIcon class="wrap" />
   </div>
