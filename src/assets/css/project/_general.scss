@@ -107,8 +107,14 @@ a {
   }
 }
 
-.mrgn-tp {
-  margin-top: 6rem;
+.btn-alignment {
+  position: absolute;
+  bottom: 0;
+}
+
+.height-full {
+  height: 100%;
+  position: relative;
 }
 
 .main {

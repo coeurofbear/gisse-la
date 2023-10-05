@@ -1,8 +1,8 @@
 <template>
   <div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-md-6">
+    <div class="container height-full">
+      <div class="row height-full">
+        <div class="col-12 col-lg-6 height-full">
           <h1>Hey!<br>I'm Gíssela</h1>
           <p class="large">I'm a Front-End developer and Designer from Chile based in Berlin.</p>
           <div v-if="false">
@@ -10,7 +10,7 @@
             <p>In my free time I like to ride my road bike, take analogue photos and learn german.</p>
             <p>Wanna know more?</p>
           </div>
-          <router-link class="btn mrgn-tp" to="/about">About me</router-link>
+          <router-link class="btn btn-alignment" to="/about">About me</router-link>
         </div>
       </div>
     </div>

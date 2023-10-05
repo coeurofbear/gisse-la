@@ -1,11 +1,13 @@
 <template>
-  <footer class="container footer">
-    <div class="row">
-      <div class="col-6 info">
-        <Icon color="#EAC435" />
-        <p class="small italic">{{ new Date().getFullYear() }}</p>
-      </div>
-      <div class="col-6">
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 info">
+          <Icon color="#EAC435" />
+          <p class="small italic">{{ new Date().getFullYear() }}</p>
+        </div>
+        <div class="col-6">
+        </div>
       </div>
     </div>
   </footer>
@@ -22,8 +24,8 @@ export default {
 </script>
 <style scoped lang="scss">
 .footer {
-  padding-top: 2rem;
-  padding-bottom: 1rem;
+  padding: 1rem 0;
+  margin-top: 2rem;
   align-self: flex-end;
 }
 .info {
