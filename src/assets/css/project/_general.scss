@@ -41,6 +41,7 @@ p {
   font-size: 12px;
   line-height: 120%;
   margin-bottom: 0;
+  font-weight: 100;
 
   @media #{$breakpoint-xl-up} {
     font-size: 14px;
