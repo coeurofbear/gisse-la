@@ -2,7 +2,7 @@
   <footer class="container footer">
     <div class="row">
       <div class="col-6 info">
-        <Icon/>
+        <Icon color="#EAC435" />
         <p class="small italic">{{ new Date().getFullYear() }}</p>
       </div>
       <div class="col-6">
