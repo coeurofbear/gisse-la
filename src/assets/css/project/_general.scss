@@ -85,6 +85,7 @@ a {
   text-decoration: none;
   font-weight: bold;
   transition: all .5s ease;
+  display: inline-block;
 
   &:hover {
     background: darken($main, 5%);
