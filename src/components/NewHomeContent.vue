@@ -1,6 +1,5 @@
 <template>
-  <div>    
-    <Logo v-if="false" :height="300" class="center-logo"/>
+  <div>
     <div class="container">
       <div class="row">
         <div class="col-12 col-md-8">
@@ -16,16 +15,6 @@
   </div>
 </template>
 
-<script>
-import Logo from '@/components/Logo.vue'
-
-export default {
-  components: {
-    Logo
-  }
-}
-</script>
-
 <style scoped lang="scss">
 .center-logo {
   display: flex;
@@ -33,8 +22,4 @@ export default {
   justify-content: center;
   height: 100%;
 }
-// .main {
-//   height: 100dvh;
-//   display: grid;
-// }
 </style>
