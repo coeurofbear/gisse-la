@@ -5,7 +5,7 @@
     :class="icon"
     :height="size"
     :width="size"
-    :src="require(`@/assets/images/${icon}.svg`)"/>
+    :src="require(`@/assets/images/icons/${icon}.svg`)"/>
 </template>
 <script>
 import InlineSvg from 'vue-inline-svg'
