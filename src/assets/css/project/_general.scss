@@ -29,13 +29,15 @@ img {
 }
 
 p {
+  font-family: Inter;
+  font-weight: 200;
   margin: 0;
   font-size: 18px;
   line-height: 150%;
   margin-bottom: 1rem;
 
   @media #{$breakpoint-xl-up} {
-    font-size: 24px;
+    font-size: 21px;
   }
 
   &.italic {
@@ -44,11 +46,11 @@ p {
 }
 
 .large {
-  font-size: 27px;
+  font-size: 24px;
   line-height: 140%;
 
   @media #{$breakpoint-xl-up} {
-    font-size: 36px;
+    font-size: 27px;
   }
 }
 
@@ -72,7 +74,7 @@ h4 {
 
 h1 {
   color: $blakish;
-  font-size: 55px;
+  font-size: 65px;
   font-style: italic;
   margin-bottom: 1rem;
   line-height: 120%;
@@ -92,18 +94,38 @@ a {
 }
 
 .btn {
-  padding: 10px 15px;
-  border-radius: 5px;
-  background: $main;
-  font-size: 20px;
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
   color: white;
   text-decoration: none;
-  font-weight: bold;
-  transition: all .5s ease;
+  text-transform: uppercase;
   display: inline-block;
+  letter-spacing: 6px;
+  font-style: italic;
+  padding: 10px 5px 30px;
+  transition: all .5s ease;
 
   &:hover {
-    background: darken($main, 5%);
+    color: darken(white, 20%);
+  }
+  
+  &::after {
+    content: '';
+    transition: all 1s ease;
+    position: absolute;
+    height: 20px;
+    width: 20%;
+    background-image: url('@/assets/images/icons/wave.svg');
+    background-repeat: repeat-x;
+    background-size: 60px;
+    left: 0;
+    bottom: 0;
+    border-radius: 3px;
+  }
+
+  &:hover::after {
+    width: 75%;
   }
 }
 
