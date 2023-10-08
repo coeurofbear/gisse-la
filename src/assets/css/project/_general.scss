@@ -22,6 +22,13 @@ body {
   #g {
     fill: $dark;
   }
+  .btn {
+    color: $whitish;
+
+    &:hover {
+      color: darken($whitish, 20%);
+    }
+  }
 }
 
 img {
@@ -97,7 +104,7 @@ a {
   font-family: Inter;
   font-size: 16px;
   font-weight: 400;
-  color: white;
+  color: $blakish;
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
@@ -107,7 +114,7 @@ a {
   transition: all .5s ease;
 
   &:hover {
-    color: darken(white, 20%);
+    color: darken($blakish, 20%);
   }
   
   &::after {
@@ -143,4 +150,7 @@ a {
   display: grid;
   grid-template-rows: auto 1fr auto;
   min-height: 100dvh;
+}
+.cursor {
+  cursor: pointer;
 }

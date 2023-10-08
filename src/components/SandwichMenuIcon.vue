@@ -1,5 +1,5 @@
 <template>
-  <div @click.native="isOpen = !isOpen;">
+  <div @click.native="isOpen = !isOpen;" class="button">
     <div class="line" :class="{open: isOpen}"/>
     <div class="line" :class="{open: isOpen}"/>
   </div>
@@ -17,7 +17,7 @@ export default {
 <style lang="scss" scoped>
 @import '@/assets/css/variables/all.scss';
 .line {
-  background: $main;
+  background: $yellow;
   height: 3px;
   border-radius: 5px;
   width: 40px;
@@ -51,6 +51,14 @@ export default {
     &:nth-child(2) {
       transform: rotate(-45deg);
     }
+  }
+}
+.button {
+  padding: 15px 0;
+  cursor: pointer;
+
+  &.open {
+    padding: 0;
   }
 }
 </style>

@@ -1,9 +1,10 @@
 <template>
   <div class="top-bar">
+    <Icon @click="switchDarkMode" :icon="darkMode ? 'bulb' : 'bulb-off'" color="#EAC435" class="cursor"/>
     <router-link to="/">
       <Icon :size="90" icon="logo-full" color="#EAC435"/>
     </router-link>
-    <SandwichMenuIcon class="wrap" />
+    <SandwichMenuIcon />
   </div>
 </template>
 
@@ -15,23 +16,27 @@ export default {
   components: {
     SandwichMenuIcon,
     Icon
-}
+  },
+  data() {
+    return {
+      darkMode: false
+    }
+  },
+  methods: {
+    switchDarkMode () {
+      this.darkMode = !this.darkMode
+      const main = document.querySelector('#app .main')
+      main.classList.toggle('dark')
+    }
+  }
 }
 </script>
 <style scoped lang="scss">
-.wrap {
-  padding: 15px 0;
-  position: absolute;
-  right: 30px;
-  top: 50%;
-  transform: translateY(-50%);
-}
 .top-bar {
-  position: relative;
   width: 100%;
   display: flex;
-  justify-content: center;
-  padding: 35px 0;
-  align-self: self-start;
+  justify-content: space-between;
+  padding: 35px;
+  align-items: center;
 }
 </style>

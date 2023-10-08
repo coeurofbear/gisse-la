@@ -54,7 +54,7 @@ svg:hover :deep(.stop3) {
     filter: blur(2px);
   }
 
-  :deep(path) {
+  :deep(path:first-child) {
     fill: url(#gradient-svg) var(--color);
   }
 }
