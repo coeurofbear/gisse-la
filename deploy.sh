@@ -8,7 +8,7 @@ cd dist
 # copy index as 404
 cp index.html 404.html
 # copy htaccess file
-mv .htaccess
+cp ./.htaccess ./dist
 # if you are deploying to a custom domain
 echo 'www.gisse.la' > CNAME
 git init
