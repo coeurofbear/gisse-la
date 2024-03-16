@@ -37,25 +37,34 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-svg :deep(stop) {
+
+svg {
   transition: .8s;
-}
-svg:hover :deep(.stop1) {
-  stop-color: #22c1c3;
-}
-svg:hover :deep(.stop3) {
-  stop-color: #eeaeca;
-}
 
-.icon {
-  transition: filter ease .5s;
-
-  &:hover {
-    filter: blur(2px);
+  :deep(stop) {
+    transition: .8s;
   }
+  &.logo-full {
+    :deep(.stop1),
+    :deep(.stop3) {
+      stop-color: var(--color);
+    }
+    &:hover {
+      filter: blur(2px);
 
-  :deep(path:first-child) {
-    fill: url(#gradient-svg) var(--color);
+      :deep(.stop1) {
+        stop-color: #22c1c3;
+      }
+      :deep(.stop3) {
+        stop-color: #eeaeca;
+      }
+    }
+    :deep(path:first-child) {
+      fill: url(#gradient-svg) var(--color);
+    }
+  }
+  &:not(.logo-full) :deep(path:first-child) {
+    fill: var(--color);
   }
 }
 </style>
