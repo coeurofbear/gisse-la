@@ -3,12 +3,12 @@
 set -e
 # build
 yarn run build
+# copy htaccess file
+cp .htaccess ./dist
 # navigate into the build output directory
 cd dist
 # copy index as 404
 cp index.html 404.html
-# copy htaccess file
-cp ./.htaccess ./dist
 # if you are deploying to a custom domain
 echo 'www.gisse.la' > CNAME
 git init
