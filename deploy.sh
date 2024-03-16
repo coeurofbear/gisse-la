@@ -3,8 +3,6 @@
 set -e
 # build
 yarn run build
-# copy htaccess file
-cp .htaccess ./dist
 # navigate into the build output directory
 cd dist
 # copy index as 404
